@@ -12,9 +12,9 @@
     <string name="itemFeedback">发表反馈</string>
     <string name="itemExitAccount">退出当前账号</string>
     
-    <dimen name="itemIcon">50dp</dimen>
+    <dimen name="itemIcon">35dp</dimen>
     <dimen name="itemSpan">20dp</dimen>
-    <dimen name="itemBigger">33sp</dimen>
+    <dimen name="itemBigger">20sp</dimen>
     <dimen name="itemBig">30sp</dimen>
     <color name="white">#ffffff</color>
 

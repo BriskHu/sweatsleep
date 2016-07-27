@@ -8,33 +8,31 @@
 
     <RelativeLayout
         android:id="@+id/rLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
         android:background="#0ca4a9"
         android:gravity="center_horizontal" >
 
         <ImageView
-            android:layout_width="240dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
             android:alpha="0.4"
             android:background="@drawable/backgroundMenu" />
 
         <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="98dp"
-            android:layout_height="90dp"
+            android:layout_width="148dp"
+            android:layout_height="138dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
             android:background="@drawable/sideline" />
 
         <ImageView
             android:id="@+id/userImage"
-            android:layout_width="78dp"
-            android:layout_height="78dp"
-            android:layout_marginTop="45dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
             android:background="@drawable/userImage" />
-
     </RelativeLayout>
 
     <LinearLayout
@@ -51,6 +49,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal" >
 
@@ -187,8 +186,8 @@
     <!-- eixtAccount -->
 
     <LinearLayout
-        android:layout_width="160dp"
-        android:layout_height="60dp"
+        android:layout_width="258dp"
+        android:layout_height="88dp"
         android:layout_below="@id/lLayout1"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -198,16 +197,16 @@
         android:orientation="horizontal" >
 
         <LinearLayout
-            android:layout_width="157dp"
-            android:layout_height="57dp"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
             android:background="@drawable/circle_rectangle_cyan"
             android:gravity="center"
             android:orientation="horizontal" >
 
             <Button
                 android:id="@+id/buttonExitAccount"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="240dp"
+                android:layout_height="70dp"
                 android:background="@drawable/rectangle_cyan"
                 android:text="@string/itemExitAccount"
                 android:textColor="#0ca4a9"
