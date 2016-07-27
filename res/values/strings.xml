@@ -13,9 +13,8 @@
     <string name="itemExitAccount">退出当前账号</string>
     
     <dimen name="itemIcon">35dp</dimen>
-    <dimen name="itemSpan">20dp</dimen>
-    <dimen name="itemBigger">20sp</dimen>
-    <dimen name="itemBig">30sp</dimen>
-    <color name="white">#ffffff</color>
+    <dimen name="itemSpan">23dp</dimen>
+    <dimen name="itemBigger">25sp</dimen>
+    <dimen name="itemBig">20sp</dimen>
 
 </resources>

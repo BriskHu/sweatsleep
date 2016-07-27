@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/backgroundColumn" >
+    android:background="@drawable/background_column" >
 
     <!-- userImage -->
 
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:alpha="0.4"
-            android:background="@drawable/backgroundMenu" />
+            android:background="@drawable/background_menu" />
 
         <ImageView
             android:layout_width="148dp"
@@ -32,7 +32,7 @@
             android:layout_height="120dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:background="@drawable/userImage" />
+            android:background="@drawable/user_image" />
     </RelativeLayout>
 
     <LinearLayout
@@ -91,7 +91,7 @@
                 android:id="@+id/imageMyRecord"
                 android:layout_width="@dimen/itemIcon"
                 android:layout_height="@dimen/itemIcon"
-                android:src="@drawable/myRecord" />
+                android:src="@drawable/my_record" />
 
             <Button
                 android:id="@+id/buttonMyRecord"

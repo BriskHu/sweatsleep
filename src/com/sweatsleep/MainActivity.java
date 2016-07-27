@@ -2,6 +2,7 @@ package com.sweatsleep;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,14 +11,30 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 
+	private static String className = "MainActivity";
+	
+	// Main view components.
 	private Button buttonOpenMenuUser;
+	private boolean menuIsOpen = false;
+	private SlidingMenuView slidingMenu;
+	// User menu components.
 	private ImageView userImage;
+	private ImageView newMessage;
+	private Button buttonMessage;
+	private Button buttonMyRecord;
+	private Button buttonSetting;
+	private Button buttonAbout;
+	private Button buttonFeedback;
+	private Button buttonExitAccount;
+	
 	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		initView();
 	}
 
 	@Override
@@ -39,9 +56,57 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
+	protected void initView()
+	{
+		getComponent();
+		
+		if(SlidingMenuView.menuOpen)
+		{
+			buttonOpenMenuUser.setBackgroundResource(R.drawable.back);
+			menuIsOpen = true;
+		}
+		else
+		{
+			buttonOpenMenuUser.setBackgroundResource(R.drawable.forward);
+			menuIsOpen = false;
+		}
+		
+		Log.d(className, "View has initiated.");
+	}
+	
 	protected void getComponent()
 	{
-		userImage = (ImageView) findViewById(R.id.);
+		buttonOpenMenuUser = (Button) findViewById(R.id.buttonOpenMenuUser);
+		
+		userImage = (ImageView) findViewById(R.id.userImage);
+		newMessage = (ImageView) findViewById(R.id.newMessage);
+		buttonMessage = (Button) findViewById(R.id.buttonMessage);
+		buttonMyRecord = (Button) findViewById(R.id.buttonMyRecord);
+		buttonSetting = (Button) findViewById(R.id.buttonSetting);
+		buttonAbout = (Button) findViewById(R.id.buttonAbout);
+		buttonFeedback = (Button) findViewById(R.id.buttonFeedback);
+		buttonExitAccount = (Button) findViewById(R.id.buttonExitAccount);
+		
+		Log.d(className, "All components have gotten.");
+	}
+	
+	public void shiftMenuUser(View view)
+	{
+		if(menuIsOpen)
+		{
+			Log.d(className, "Open user menu.");
+			
+			slidingMenu.openMenu();
+			buttonOpenMenuUser.setBackgroundResource(R.drawable.back);
+			menuIsOpen = true;
+		}
+		else
+		{
+			Log.d(className, "Close user menu.");
+			slidingMenu.closeMenu();
+			buttonOpenMenuUser.setBackgroundResource(R.drawable.forward);
+			menuIsOpen = false;
+		}
 	}
 	
 	public void readMessage(View view)

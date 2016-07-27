@@ -1,5 +1,6 @@
 package com.sweatsleep;
 
+import android.R.menu;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -16,7 +17,7 @@ public class SlidingMenuView extends HorizontalScrollView
 	public static String className = "SlidingMenuView";
 	private int screenWidth;
 	private int menuWidth;
-	private int menuRightPadding = 150;
+	private int menuRightPadding = 50;
 	private int halfMenuWidth = menuWidth / 2;
 	private boolean once =false;
 	
@@ -37,7 +38,7 @@ public class SlidingMenuView extends HorizontalScrollView
 		Log.d(className, "The screen width is " + screenWidth);
 		
 		// To convert the dip to pixel.
-		menuRightPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 150, context.getResources().getDisplayMetrics());
+		menuRightPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, context.getResources().getDisplayMetrics());
 	}
 	
 	// To configure the parameters of sub-view by overwriting the onMeasure method. 
@@ -53,7 +54,7 @@ public class SlidingMenuView extends HorizontalScrollView
 			contentView = (ViewGroup) linearLayout.getChildAt(1);
 			
 			menuWidth = menuView.getLayoutParams().width = screenWidth - menuRightPadding;
-			contentView.getLayoutParams().width = screenWidth - menuWidth;
+			contentView.getLayoutParams().width = screenWidth;
 			once = true;
 		}
 	}
@@ -78,7 +79,7 @@ public class SlidingMenuView extends HorizontalScrollView
 		switch(action)
 		{
 		case MotionEvent.ACTION_UP:
-		{
+		//{
 			int scrollX = this.getScrollX();
 			
 			if(scrollX >= halfMenuWidth)
@@ -94,9 +95,35 @@ public class SlidingMenuView extends HorizontalScrollView
 			}
 			
 			return true;
-		}
+		//}
 		}
 		
 		return super.onTouchEvent(event);
+	}
+	
+	public void openMenu()
+	{
+		if(menuOpen)
+		{
+			return ;
+		}
+		else
+		{
+			this.smoothScrollTo(menuWidth, 0);
+			menuOpen = true;
+		}
+	}
+	
+	public void closeMenu()
+	{
+		if(!menuOpen)
+		{
+			return;
+		}
+		else
+		{
+			this.smoothScrollTo(0,0);
+			menuOpen = false;
+		}
 	}
 }

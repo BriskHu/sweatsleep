@@ -15,7 +15,7 @@
             android:orientation="horizontal" >
             
             <include layout="@layout/menu_user" />
-            <include layout="@layout/show_main" />
+            <include layout="@layout/view_main" />
         </LinearLayout>
     </com.sweatsleep.SlidingMenuView>
 

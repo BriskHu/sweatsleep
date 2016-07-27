@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/backgroundColumn" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0ca4a9" >
 
     <!-- userImage -->
 
@@ -14,10 +14,10 @@
         android:gravity="center_horizontal" >
 
         <ImageView
-            android:layout_width="240dp"
+            android:layout_width="260dp"
             android:layout_height="200dp"
             android:alpha="0.4"
-            android:background="@drawable/backgroundMenu" />
+            android:background="@drawable/background_menu" />
 
         <ImageView
             android:id="@+id/imageView1"
@@ -33,7 +33,7 @@
             android:layout_height="78dp"
             android:layout_marginTop="45dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/userImage" />
+            android:background="@drawable/user_image" />
 
     </RelativeLayout>
 
@@ -42,8 +42,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/rLayout1"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
         android:orientation="vertical" >
 
         <!-- message -->
@@ -64,7 +64,7 @@
                 android:id="@+id/buttonMessage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:background="#0ca4a9"
                 android:onClick="readMessage"
                 android:text="@string/itemMessage"
@@ -92,13 +92,13 @@
                 android:id="@+id/imageMyRecord"
                 android:layout_width="@dimen/itemIcon"
                 android:layout_height="@dimen/itemIcon"
-                android:src="@drawable/myRecord" />
+                android:src="@drawable/my_record" />
 
             <Button
                 android:id="@+id/buttonMyRecord"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:background="#0ca4a9"
                 android:text="@string/itemMyRecord"
                 android:textColor="@color/white"
@@ -124,7 +124,7 @@
                 android:id="@+id/buttonSetting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:background="#0ca4a9"
                 android:text="@string/itemSetting"
                 android:textColor="@color/white"
@@ -150,7 +150,7 @@
                 android:id="@+id/buttonAbout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:background="#0ca4a9"
                 android:text="@string/itemAbout"
                 android:textColor="@color/white"
@@ -176,7 +176,7 @@
                 android:id="@+id/buttonFeedback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:background="#0ca4a9"
                 android:text="@string/itemFeedback"
                 android:textColor="@color/white"
@@ -187,18 +187,18 @@
     <!-- eixtAccount -->
 
     <LinearLayout
-        android:layout_width="160dp"
+        android:layout_width="190dp"
         android:layout_height="60dp"
         android:layout_below="@id/lLayout1"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="50dp"
         android:background="@drawable/circle_rectangle_white"
-        android:gravity="center"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="center" >
 
         <LinearLayout
-            android:layout_width="157dp"
+            android:layout_width="187dp"
             android:layout_height="57dp"
             android:background="@drawable/circle_rectangle_cyan"
             android:gravity="center"
@@ -206,13 +206,14 @@
 
             <Button
                 android:id="@+id/buttonExitAccount"
-                android:layout_width="150dp"
+                android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:background="@drawable/rectangle_cyan"
                 android:text="@string/itemExitAccount"
                 android:textColor="#0ca4a9"
-                android:textSize="@dimen/itemBigger" />
+                android:textSize="@dimen/itemBigger"
+                android:onClick="exitPresentAccount" />
         </LinearLayout>
     </LinearLayout>
-
+    
 </RelativeLayout>

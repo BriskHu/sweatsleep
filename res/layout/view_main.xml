@@ -17,9 +17,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="50dp"
-            android:background="@mipmap/back"
-            android:onClick="openMenuUser"
-            android:color="#000000" />
+            android:onClick="shiftMenuUser"
+            android:color="#ffffff" />
     </LinearLayout>
 
 </RelativeLayout>

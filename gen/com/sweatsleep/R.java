@@ -41,33 +41,64 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f070000;
         public static final int activity_vertical_margin=0x7f070001;
+        public static final int itemBig=0x7f070005;
+        public static final int itemBigger=0x7f070004;
+        public static final int itemIcon=0x7f070002;
+        public static final int itemSpan=0x7f070003;
     }
     public static final class drawable {
-        public static final int backcard=0x7f020000;
-        public static final int button_default_bg=0x7f020001;
-        public static final int button_default_bgmusic=0x7f020002;
-        public static final int button_text_color=0x7f020003;
-        public static final int giveup=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int iphone5s=0x7f020006;
-        public static final int loading=0x7f020007;
-        public static final int next=0x7f020008;
-        public static final int notic_back=0x7f020009;
-        public static final int shadow=0x7f02000a;
-        public static final int suopingss=0x7f02000b;
-        public static final int switch_bg=0x7f02000c;
-        public static final int switch_thumb=0x7f02000d;
-        public static final int switchbt=0x7f02000e;
-        public static final int taehee03=0x7f02000f;
+        public static final int about=0x7f020000;
+        public static final int back=0x7f020001;
+        public static final int background_column=0x7f020002;
+        public static final int background_menu=0x7f020003;
+        public static final int button_default_bg=0x7f020004;
+        public static final int button_default_bgmusic=0x7f020005;
+        public static final int button_side=0x7f020006;
+        public static final int button_text_color=0x7f020007;
+        public static final int circle=0x7f020008;
+        public static final int circle_rectangle_cyan=0x7f020009;
+        public static final int circle_rectangle_white=0x7f02000a;
+        public static final int feedback=0x7f02000b;
+        public static final int forward=0x7f02000c;
+        public static final int ic_launcher=0x7f02000d;
+        public static final int iphone5s=0x7f02000e;
+        public static final int message=0x7f02000f;
+        public static final int my_record=0x7f020010;
+        public static final int next=0x7f020011;
+        public static final int notic_back=0x7f020012;
+        public static final int rectangle_cyan=0x7f020013;
+        public static final int setting=0x7f020014;
+        public static final int shadow=0x7f020015;
+        public static final int sideline=0x7f020016;
+        public static final int suopingss=0x7f020017;
+        public static final int switch_thumb=0x7f020018;
+        public static final int user_image=0x7f020019;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0001;
-        public static final int buttonOpenMenuUser=0x7f0b0000;
+        public static final int action_settings=0x7f0b0011;
+        public static final int buttonAbout=0x7f0b000c;
+        public static final int buttonExitAccount=0x7f0b000f;
+        public static final int buttonFeedback=0x7f0b000e;
+        public static final int buttonMessage=0x7f0b0005;
+        public static final int buttonMyRecord=0x7f0b0008;
+        public static final int buttonOpenMenuUser=0x7f0b0010;
+        public static final int buttonSetting=0x7f0b000a;
+        public static final int imageAbout=0x7f0b000b;
+        public static final int imageFeedback=0x7f0b000d;
+        public static final int imageMessage=0x7f0b0004;
+        public static final int imageMyRecord=0x7f0b0007;
+        public static final int imageSetting=0x7f0b0009;
+        public static final int imageView1=0x7f0b0001;
+        public static final int lLayout1=0x7f0b0003;
+        public static final int newMessage=0x7f0b0006;
+        public static final int rLayout1=0x7f0b0000;
+        public static final int userImage=0x7f0b0002;
     }
     public static final class layout {
         public static final int activity_main=0x7f040000;
         public static final int menu_user=0x7f040001;
-        public static final int show_main=0x7f040002;
+        public static final int menu_user_h=0x7f040002;
+        public static final int view_main=0x7f040003;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -98,6 +129,12 @@ public final class R {
         public static final int action_settings=0x7f080002;
         public static final int app_name=0x7f080000;
         public static final int hello_world=0x7f080001;
+        public static final int itemAbout=0x7f080006;
+        public static final int itemExitAccount=0x7f080008;
+        public static final int itemFeedback=0x7f080007;
+        public static final int itemMessage=0x7f080003;
+        public static final int itemMyRecord=0x7f080004;
+        public static final int itemSetting=0x7f080005;
     }
     public static final class style {
         /** 
