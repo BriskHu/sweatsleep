@@ -38,7 +38,9 @@ public class SlidingMenuView extends HorizontalScrollView
 		Log.d(className, "The screen width is " + screenWidth);
 		
 		// To convert the dip to pixel.
-		menuRightPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, context.getResources().getDisplayMetrics());
+		menuRightPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 100, context.getResources().getDisplayMetrics());
+		
+		Log.d(className, "100dp = " + menuRightPadding);
 	}
 	
 	// To configure the parameters of sub-view by overwriting the onMeasure method. 
@@ -103,6 +105,8 @@ public class SlidingMenuView extends HorizontalScrollView
 	
 	public void openMenu()
 	{
+		Log.d(className, "Menu opening.");
+		
 		if(menuOpen)
 		{
 			return ;
@@ -116,6 +120,8 @@ public class SlidingMenuView extends HorizontalScrollView
 	
 	public void closeMenu()
 	{
+		Log.d(className, "Menu closing.");
+		
 		if(!menuOpen)
 		{
 			return;

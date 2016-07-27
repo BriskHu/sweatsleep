@@ -92,20 +92,19 @@ public class MainActivity extends Activity {
 	
 	public void shiftMenuUser(View view)
 	{
-		if(menuIsOpen)
+		if(!menuIsOpen)
 		{
 			Log.d(className, "Open user menu.");
 			
 			slidingMenu.openMenu();
 			buttonOpenMenuUser.setBackgroundResource(R.drawable.back);
-			menuIsOpen = true;
 		}
 		else
 		{
 			Log.d(className, "Close user menu.");
+			
 			slidingMenu.closeMenu();
 			buttonOpenMenuUser.setBackgroundResource(R.drawable.forward);
-			menuIsOpen = false;
 		}
 	}
 	

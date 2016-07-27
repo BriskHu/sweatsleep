@@ -16,7 +16,7 @@
             android:id="@+id/buttonOpenMenuUser"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="30dp"
             android:onClick="shiftMenuUser"
             android:color="#ffffff" />
     </LinearLayout>
