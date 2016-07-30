@@ -1,6 +1,5 @@
 package com.sweatsleep;
 
-import android.R.menu;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -109,11 +108,12 @@ public class SlidingMenuView extends HorizontalScrollView
 		
 		if(menuOpen)
 		{
-			return ;
+			//return ;
 		}
 		else
 		{
-			this.smoothScrollTo(menuWidth, 0);
+			//this.smoothScrollTo(menuWidth, 0);
+			this.smoothScrollTo(0, 0);
 			menuOpen = true;
 		}
 	}
@@ -122,14 +122,14 @@ public class SlidingMenuView extends HorizontalScrollView
 	{
 		Log.d(className, "Menu closing.");
 		
-		if(!menuOpen)
+		if(menuOpen)
 		{
-			return;
+			this.smoothScrollTo(menuWidth, 0);
+			//this.smoothScrollTo(0,0);
+			menuOpen = false;
 		}
 		else
 		{
-			this.smoothScrollTo(0,0);
-			menuOpen = false;
 		}
 	}
 }

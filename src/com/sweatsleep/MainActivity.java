@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
 	private Button buttonOpenMenuUser;
 	private boolean menuIsOpen = false;
 	private SlidingMenuView slidingMenu;
+	
 	// User menu components.
 	private ImageView userImage;
 	private ImageView newMessage;
@@ -78,6 +79,8 @@ public class MainActivity extends Activity {
 	{
 		buttonOpenMenuUser = (Button) findViewById(R.id.buttonOpenMenuUser);
 		
+		slidingMenu = (SlidingMenuView) findViewById(R.id.slidingMenu);
+		
 		userImage = (ImageView) findViewById(R.id.userImage);
 		newMessage = (ImageView) findViewById(R.id.newMessage);
 		buttonMessage = (Button) findViewById(R.id.buttonMessage);
@@ -97,6 +100,7 @@ public class MainActivity extends Activity {
 			Log.d(className, "Open user menu.");
 			
 			slidingMenu.openMenu();
+			menuIsOpen = true;
 			buttonOpenMenuUser.setBackgroundResource(R.drawable.back);
 		}
 		else
@@ -104,6 +108,7 @@ public class MainActivity extends Activity {
 			Log.d(className, "Close user menu.");
 			
 			slidingMenu.closeMenu();
+			menuIsOpen = false;
 			buttonOpenMenuUser.setBackgroundResource(R.drawable.forward);
 		}
 	}

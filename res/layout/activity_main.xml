@@ -5,6 +5,7 @@
     tools:context="com.sweatsleep.MainActivity" >
 
     <com.sweatsleep.SlidingMenuView
+        android:id="@+id/slidingMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none" >
